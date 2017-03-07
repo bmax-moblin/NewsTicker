@@ -27,6 +27,7 @@ ticker.setHeadlines(mHeadlines);
 ticker.setListener(new NewsTicker.HeadlineClickListener() {
     @Override
     public void onClick(int index) {
+        // Index identifies the clicked headline in the list.
         Toast.makeText(MainActivity.this, mHeadlines.get(index), Toast.LENGTH_SHORT)
              .show();
     }
