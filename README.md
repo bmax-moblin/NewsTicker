@@ -1,6 +1,7 @@
 ## Description
 News Ticker is a widget, that shows scrolling text running from right to left across the screen.
 
+Click on the image below to see the demo on YouTube.
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/PlRBQHb6WRo/0.jpg)](https://youtu.be/PlRBQHb6WRo)
 ## Usage (XML)
 ```xml
