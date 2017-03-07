@@ -1,10 +1,10 @@
-## Description
+### Description
 News Ticker is a widget, that shows scrolling text running from right to left across the screen.
 
 Click on the image below to see the demo on YouTube.
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/PlRBQHb6WRo/0.jpg)](https://youtu.be/PlRBQHb6WRo)
-## Usage (XML)
+### Usage (XML)
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -20,8 +20,7 @@ Click on the image below to see the demo on YouTube.
 
 </FrameLayout>
 ```
-
-## Usage (Java)
+### Usage (Java)
 <pre><code>
 NewsTicker ticker = (NewsTicker) findViewById(R.id.news_ticker);
 ticker.setHeadlines(mHeadlines);
