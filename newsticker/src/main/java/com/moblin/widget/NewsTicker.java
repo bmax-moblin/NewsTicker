@@ -186,9 +186,8 @@ public class NewsTicker extends FrameLayout implements View.OnClickListener {
     }
 
     private int nextIndex() {
-        int old = mIndex++;
-        mIndex %= mHeadlines.size();
-        return old;
+        mIndex = (mIndex + 1) % mHeadlines.size();
+        return mIndex;
     }
 
     private void animateEnter(final TextView tv) {
@@ -206,7 +205,7 @@ public class NewsTicker extends FrameLayout implements View.OnClickListener {
         // until the next headline should appear.
         int distance = tv.getWidth() + (int)mSpaceWidth;
         tv.animate()
-                .translationXBy(-1f * distance)
+                .translationXBy(-distance)
                 .setDuration(distance * TRAVEL_SPEED)
                 .setInterpolator(LINEAR)
                 .setListener(new Animator.AnimatorListener() {
@@ -249,6 +248,7 @@ public class NewsTicker extends FrameLayout implements View.OnClickListener {
                 .setListener(new Animator.AnimatorListener() {
                     @Override
                     public void onAnimationStart(Animator animation) {
+                        // No action
                     }
                     @Override
                     public void onAnimationEnd(Animator animation) {
