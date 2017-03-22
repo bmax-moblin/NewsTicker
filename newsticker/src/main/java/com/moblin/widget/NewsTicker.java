@@ -26,6 +26,8 @@ import java.util.Set;
 /**
  * News Ticker is a widget, that shows scrolling text running
  * from right to left across the screen.
+ * Custom attribute:
+ * textColor - headlines text color
  */
 @SuppressWarnings("unused")
 public class NewsTicker extends FrameLayout implements View.OnClickListener {
